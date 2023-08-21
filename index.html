@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <form id="search" class="search">
+            <input type="text" id="search-input" placeholder="city" maxlength="30">
+            <button type="submit" id="search-btn">
+                <img src="./img/search.svg" alt="search">
+            </button>
+        </form>
+        <section class="forecast">
+            <section id='weather' class="weather">
+                <span id='temperature' class="temperature"></span>
+                <img src="/img/weather.svg" alt="weather" class="weather-img">
+                <div class="current-location">
+                    <span id="city"></span>
+                    <button id="like">
+                        <img id='like-img' src="./img/like.svg" alt="like">
+                    </button>
+                </div>
+            </section>
+            <section id="locations" class="locations">
+                <h3 class="locations-title">Added Locations:</h3>
+                <ul id='locations-list' class="locations-list">
+                    <!-- <li class="location">
+                        Amur
+                        <button class="remove-location-btn">✖</button>
+                    </li>
+                    <li class="location">
+                        Samara
+                        <button class="remove-location-btn">✖</button>
+                    </li>
+                    <li class="location">
+                        Bali
+                        <button class="remove-location-btn">✖</button>
+                    </li>
+                    <li class="location">
+                        Dane
+                        <button class="remove-location-btn">✖</button>
+                    </li>
+                    <li class="location">
+                        Kilo
+                        <button class="remove-location-btn">✖</button>
+                    </li>
+                    <li class="location">
+                        Almaty
+                        <button class="remove-location-btn">✖</button>
+                    </li>
+                    <li class="location">
+                        Taras
+                        <button class="remove-location-btn">✖</button>
+                    </li>
+                    <li class="location">
+                        Ubud
+                        <button class="remove-location-btn">✖</button>
+                    </li>
+                    <li class="location">
+                        Taras
+                        <button class="remove-location-btn">✖</button>
+                    </li> -->
+                </ul>
+            </section>
+        </section>
+    </main>
+    <script type="module" src="./main.js" defer></script>
+</body>
+
+</html>
