@@ -10,7 +10,7 @@ function getWeatherInfo(tempValue, cityValue, icon) {
 	temperature.textContent = Math.round(tempValue)
 	city.textContent = cityValue
 	weatherImg.src = `https://openweathermap.org/img/wn/${icon}@4x.png`
-	searchInput.value = '' //я переделаю весь код
+	searchInput.value = ''
 }
 
 const searchForm = getElementById('search')
@@ -74,7 +74,7 @@ function weatherData() {
 			)
 		})
 		.catch(error => {
-			alert(error.message) //с сервера брать?
+			alert(error.message)
 		})
 }
 
